@@ -29,7 +29,7 @@ object Permissions {
             EasyPermissions.requestPermissions(
                 fragment,
                 "This app can't work without this permission",
-                Constans.PERMISSION_BG_LOCATION_REQUEST_CODE,
+                Constants.PERMISSION_BG_LOCATION_REQUEST_CODE,
                 Manifest.permission.ACCESS_BACKGROUND_LOCATION
             )
         }
@@ -39,7 +39,7 @@ object Permissions {
         EasyPermissions.requestPermissions(
             fragment,
             "This app can't work without this permission",
-            Constans.PERMISSION_LOCATION_REQUEST_CODE,
+            Constants.PERMISSION_LOCATION_REQUEST_CODE,
             Manifest.permission.ACCESS_FINE_LOCATION
         )
     }

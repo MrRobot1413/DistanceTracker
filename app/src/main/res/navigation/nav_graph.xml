@@ -33,19 +33,24 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/resultFragment"
         android:name="ru.mrrobot1413.distancetracker.ui.fragments.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/action_resultFragment_to_permissionFragment"
-            app:destination="@id/permissionFragment"
+            app:destination="@id/mapsFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-    </fragment>
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mapsFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="result"
+            app:argType="ru.mrrobot1413.distancetracker.models.Result" />
+    </dialog>
     <fragment
         android:id="@+id/splashScreen"
         android:name="ru.mrrobot1413.distancetracker.ui.fragments.SplashScreen"

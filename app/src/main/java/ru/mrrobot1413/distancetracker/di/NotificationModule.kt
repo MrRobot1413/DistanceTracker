@@ -12,7 +12,7 @@ import dagger.hilt.android.components.ServiceComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.android.scopes.ServiceScoped
 import ru.mrrobot1413.distancetracker.R
-import ru.mrrobot1413.distancetracker.misc.Constans
+import ru.mrrobot1413.distancetracker.misc.Constants
 import ru.mrrobot1413.distancetracker.ui.MainActivity
 
 @Module
@@ -26,10 +26,8 @@ object NotificationModule {
     ): PendingIntent {
         return PendingIntent.getActivity(
             context,
-            Constans.PENDING_INTENT_REQUEST_CODE,
-            Intent(context, MainActivity::class.java).apply {
-                this.action = Constans.ACTION_NAVIGATE_TO_MAPS_FRAGMENT
-            },
+            Constants.PENDING_INTENT_REQUEST_CODE,
+            Intent(context, MainActivity::class.java),
             PendingIntent.FLAG_UPDATE_CURRENT)
     }
 
@@ -39,7 +37,7 @@ object NotificationModule {
         @ApplicationContext context: Context,
         pendingIntent: PendingIntent
     ): NotificationCompat.Builder {
-        return NotificationCompat.Builder(context, Constans.NOTIFICATION_CHANNEL_ID)
+        return NotificationCompat.Builder(context, Constants.NOTIFICATION_CHANNEL_ID)
             .setAutoCancel(false)
             .setOngoing(true)
             .setSmallIcon(R.drawable.ic_baseline_directions_run_24)

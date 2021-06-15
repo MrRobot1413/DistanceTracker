@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DistanceTracker</string>
+    <string name="continue_txt">Продолжить</string>
+    <string name="permission_description">Добро пожаловать в Distance Tracker. Для того чтобы использовать наше приложение,
+        нам потребуется запросить разрешение на использование геолокации от Вас. Иначе, мы будем не способны предоставить Вам наши сервисы.
+        Если Вы согласны, нажмите кнопку продолжить снизу.</string>
+    <string name="permission_required">Запрос разрешения</string>
+    <string name="welcome_imageview">Welcome imageView</string>
+    <string name="start">Начать</string>
+    <string name="tap_on_my_location_button">Нажмите на кнопку "Моя геолокация"</string>
+    <string name="stop">Стоп</string>
+    <string name="reset">Перезапуск</string>
+    <string name="logo">Логотип</string>
+    <string name="distance_travelled">Пройденная дистанция</string>
+    <string name="time_elapsed">Пройденное время</string>
+    <string name="share">Поделиться</string>
+    <string name="extra_subject_header">Мои результаты из DistanceTracker App!</string>
+    <string name="i_passed">Я прошел(ла) </string>
+    <string name="in"> за</string>
+</resources>
